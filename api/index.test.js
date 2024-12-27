@@ -10,7 +10,7 @@ describe("POST /register", () => {
       password: "testpassword",
     });
 
-    expect(response.body).toHaveProperty("accessToken1");
+    expect(response.body).toHaveProperty("accessToken");
     expect(response.body).toHaveProperty("refreshToken");
   });
 });
