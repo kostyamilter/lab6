@@ -6,7 +6,7 @@ const app = require("./index.js"); // Импортируйте ваше прил
 describe("POST /register", () => {
   it("should register a new user", async () => {
     const response = await request(app.callback()).post("/register").send({
-      username: "testuser133332",
+      username: "testuser0",
       password: "testpassword",
     });
 

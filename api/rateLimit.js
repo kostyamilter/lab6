@@ -4,7 +4,7 @@ const rateLimit = ratelimit({
   driver: "memory",
   db: new Map(),
   duration: 60000,
-  max: 10,
+  max: 5,
   message: "Too many requests, please try again later.",
 });
 module.exports = { rateLimit };
