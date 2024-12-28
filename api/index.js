@@ -17,7 +17,7 @@ router.post("/login", loginUser);
 router.post("/refresh", refreshTokens);
 
 router.get("/profile", verifyToken, rateLimit, (ctx) => {
-  ctx.body = { message: "Protected route", user: ctx.state.user };
+  ctx.body = { message: "Protected route1", user: ctx.state.user };
 });
 
 app.use(router.routes()).use(router.allowedMethods());

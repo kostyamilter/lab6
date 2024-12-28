@@ -6,11 +6,11 @@ const app = require("./index.js"); // Импортируйте ваше прил
 describe("POST /register", () => {
   it("should register a new user", async () => {
     const response = await request(app.callback()).post("/register").send({
-      username: "testuser0",
+      username: "testuser110",
       password: "testpassword",
     });
 
-    expect(response.body).toHaveProperty("accessToken1");
+    expect(response.body).toHaveProperty("accessToken");
     expect(response.body).toHaveProperty("refreshToken");
   });
 });
